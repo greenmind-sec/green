@@ -1,11 +1,11 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 #title           :GreenLib.py
 #description     :Este arquivo tem como meta ser a LIB principal de conexão do projeto Green
 #author          :GreenMind (GreenMindLabs)
 #date            :04 Agosto 2018
 #version         :0.3DEV
-
 
 #=======================================================================
 #Modulos
@@ -38,10 +38,6 @@ def version():
     print(VERSION)
     core_menu.espera()
 
-
-
-
-
 # DEFINIÇÃO DE MENUS
 menu_actions = {
     'main_menu': core_menu.main_menu,
@@ -56,8 +52,6 @@ menu_actions = {
     'exit': core_menu.exit,
     'version': version,
 }
-
-
 
 if __name__ == "__main__":
 

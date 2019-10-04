@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 #title           :green
 #description     :Este é o arquivo principal do Green

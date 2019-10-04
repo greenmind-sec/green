@@ -26,11 +26,12 @@ RUN apt-get install tcpdump -y
 
 WORKDIR /root
 
-COPY . .
+COPY ./src /root
 
-RUN chmod +x green
+RUN chmod +x ~/green.py
 
 #TODO - Arrumar o uso via menu, via linha de comando funciona OK, porem o menu possui problemas.
-#ENTRYPOINT ["/usr/bin/python3", "/root/green"]
+ENTRYPOINT ["/usr/bin/python3", "/root/green.py"]
+# ENTRYPOINT ["/bin/sh", "-c"]
 
-#CMD ["-h"]
+CMD ["-h"]
